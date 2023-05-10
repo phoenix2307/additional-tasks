@@ -10,20 +10,20 @@ export const CurrentBankomat = (props: CurrentBankomatPropsType) => {
     return (
         <Banknotes color={props.money.banknotes === 'Dollars'? 'aquamarine':'lightcoral'}>
             <Name>{props.money.banknotes}</Name>
-            <br/>
             <Nominal>{props.money.value}</Nominal>
         </Banknotes>
     );
 };
 
 const Banknotes = styled.div`
-  background-color: ${props=>{      
-          if(props.color ==='aquamarine') {
-              return 'aquamarine'
-          } else {
-              return 'lightcoral'
-          }      
-  }};
+  background-color: ${ ({color}) =>color};
+      
+          // if(props.color ==='aquamarine') {
+          //     return 'aquamarine'
+          // } else {
+          //     return 'lightcoral'
+          // }      
+  
   font-size: 30px;
   border: 2px solid black;
   padding: 2px;
