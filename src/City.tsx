@@ -36,9 +36,7 @@ display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 30px;
-  border: 2px solid black;
   padding: 2px;
-  margin: 2px;
 `
 //1
 // Вроде все норм, но нужно причесать код. Давайте создадим const mappedMoney = props.data.map(el=>el...)
